@@ -1,0 +1,21 @@
+{
+  // Point VS Code to the local TypeScript installation so Volar's language
+  // server uses the same TypeScript version as vue-tsc.
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  // Hybrid mode: Volar owns .vue files; the built-in TS extension owns .ts files.
+  // This gives full props / emits / slots IntelliSense inside <template> sections.
+  "vue.server.hybridMode": true,
+
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+
+  // Disable legacy Vetur to prevent conflicts with Vue - Official (Volar).
+  "vetur.enable": false,
+
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
+}
